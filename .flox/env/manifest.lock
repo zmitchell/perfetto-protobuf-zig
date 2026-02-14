@@ -1,0 +1,462 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "gdb": {
+        "pkg-path": "gdb",
+        "pkg-group": "debugger",
+        "systems": [
+          "x86_64-linux",
+          "aarch64-linux"
+        ]
+      },
+      "lldb": {
+        "pkg-path": "lldb",
+        "pkg-group": "debugger",
+        "systems": [
+          "aarch64-darwin",
+          "x86_64-linux",
+          "aarch64-linux"
+        ]
+      },
+      "zig": {
+        "pkg-path": "zig",
+        "version": "0.15.2"
+      },
+      "zls": {
+        "pkg-path": "zls"
+      }
+    },
+    "hook": {
+      "on-activate": "  export PATH=\"$PWD/zig-out/bin:$PATH\"\n"
+    },
+    "profile": {
+      "fish": "  abbr wb \"zig build --watch -fincremental -Dno_install=true\"\n"
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux",
+        "aarch64-linux",
+        "aarch64-darwin"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "gdb",
+      "broken": false,
+      "derivation": "/nix/store/w67kvwqy7j9ni28ngzm12ypi98i8b4n9-gdb-17.1.drv",
+      "description": "GNU Project debugger",
+      "install_id": "gdb",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "gdb-17.1",
+      "pname": "gdb",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T05:05:24.216272Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "17.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/f6s638m5s9b8al73lgdp0lvaldr6wa8m-gdb-17.1"
+      },
+      "system": "aarch64-linux",
+      "group": "debugger",
+      "priority": 5
+    },
+    {
+      "attr_path": "gdb",
+      "broken": false,
+      "derivation": "/nix/store/98cs25bj6v4pyrcrxz0kw0vivi4mqjry-gdb-17.1.drv",
+      "description": "GNU Project debugger",
+      "install_id": "gdb",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "gdb-17.1",
+      "pname": "gdb",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T06:05:47.208834Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "17.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/935m0ckihjv7l9mp10v1dw2fxkmffv29-gdb-17.1"
+      },
+      "system": "x86_64-linux",
+      "group": "debugger",
+      "priority": 5
+    },
+    {
+      "attr_path": "lldb",
+      "broken": false,
+      "derivation": "/nix/store/34fhwndj26bkasw5qan5k4ggmg2a9msl-lldb-21.1.8.drv",
+      "description": "Next-generation high-performance debugger",
+      "install_id": "lldb",
+      "license": "[ NCSA, Apache-2.0, LLVM-exception ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "lldb-21.1.8",
+      "pname": "lldb",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T04:36:12.827667Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "21.1.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/pndqrgd08i0chkmis4ni54a7j1jvmwpy-lldb-21.1.8-dev",
+        "out": "/nix/store/cdbg0csqjjc11kfz8clqsazm4675m4j5-lldb-21.1.8"
+      },
+      "system": "aarch64-darwin",
+      "group": "debugger",
+      "priority": 5
+    },
+    {
+      "attr_path": "lldb",
+      "broken": false,
+      "derivation": "/nix/store/lh982j0bjqdzjxbh008dc85jxgb9bv9g-lldb-21.1.8.drv",
+      "description": "Next-generation high-performance debugger",
+      "install_id": "lldb",
+      "license": "[ NCSA, Apache-2.0, LLVM-exception ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "lldb-21.1.8",
+      "pname": "lldb",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T05:05:51.082386Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "21.1.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/wqqbbfisk80nkdm4m8lwfykpbyqcx60r-lldb-21.1.8-dev",
+        "out": "/nix/store/mp273w1pqgw0kj125c4zfg95snwk57fy-lldb-21.1.8"
+      },
+      "system": "aarch64-linux",
+      "group": "debugger",
+      "priority": 5
+    },
+    {
+      "attr_path": "lldb",
+      "broken": false,
+      "derivation": "/nix/store/fjp0r7jk0r12kjzy97g0imc902qb77z9-lldb-21.1.8.drv",
+      "description": "Next-generation high-performance debugger",
+      "install_id": "lldb",
+      "license": "[ NCSA, Apache-2.0, LLVM-exception ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "lldb-21.1.8",
+      "pname": "lldb",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T06:06:16.926647Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "21.1.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/wds35idw8yd5ck2gny20q0h2yvm69hw9-lldb-21.1.8-dev",
+        "out": "/nix/store/aq37nm0bfkb79w8ffg25q4bnm8h7mmvy-lldb-21.1.8"
+      },
+      "system": "x86_64-linux",
+      "group": "debugger",
+      "priority": 5
+    },
+    {
+      "attr_path": "zig",
+      "broken": false,
+      "derivation": "/nix/store/xy67fjhafb4r776md5mf9ms3swamflvj-zig-0.15.2.drv",
+      "description": "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software",
+      "install_id": "zig",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "zig-0.15.2",
+      "pname": "zig",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T04:38:28.300092Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/a6l0kp7r16ac4nf07133xg0nlzzv4g5v-zig-0.15.2-doc",
+        "out": "/nix/store/k9hhmnr65n8jf93iiwbkwbmwxrjnbw0h-zig-0.15.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zig",
+      "broken": false,
+      "derivation": "/nix/store/m79avjdbs10yca08s0rzzmibawqsrd38-zig-0.15.2.drv",
+      "description": "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software",
+      "install_id": "zig",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "zig-0.15.2",
+      "pname": "zig",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T05:08:47.577506Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/8z2y1b2b397mqpk5p0b9zchn6yfdibw3-zig-0.15.2-doc",
+        "out": "/nix/store/blyn3q5im6mwjp9rvdkcrcs9fqqn6qip-zig-0.15.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zig",
+      "broken": false,
+      "derivation": "/nix/store/im7n9kwp85ahfpyxrm5h1hl67h90s8p9-zig-0.15.2.drv",
+      "description": "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software",
+      "install_id": "zig",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "zig-0.15.2",
+      "pname": "zig",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T06:09:21.654877Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/wvyjvlbhib0ccmqsmq2s388k2k1zc8kc-zig-0.15.2-doc",
+        "out": "/nix/store/9cva8y1f58wxmja5lf16sa8s32qfj3hk-zig-0.15.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zls",
+      "broken": false,
+      "derivation": "/nix/store/4i03ygnp4ivks13n36sp4fsw00sxiqlk-zls-0.15.1.drv",
+      "description": "Zig LSP implementation + Zig Language Server",
+      "install_id": "zls",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "zls-0.15.1",
+      "pname": "zls",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T04:38:28.448064Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7y33xkyjqfs0a5v25n0il77cf2ngpfkc-zls-0.15.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zls",
+      "broken": false,
+      "derivation": "/nix/store/7ny2h9vxsz0bs7ijiqm91garsz6zsssg-zls-0.15.1.drv",
+      "description": "Zig LSP implementation + Zig Language Server",
+      "install_id": "zls",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "zls-0.15.1",
+      "pname": "zls",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T05:08:47.784057Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/i78d1f4zav0cgmsfmx3f64kzqcrba1ng-zls-0.15.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zls",
+      "broken": false,
+      "derivation": "/nix/store/1pka9fg65qd5yl41gf8msbhw50l7lshw-zls-0.15.1.drv",
+      "description": "Zig LSP implementation + Zig Language Server",
+      "install_id": "zls",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "name": "zls-0.15.1",
+      "pname": "zls",
+      "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+      "rev_count": 940249,
+      "rev_date": "2026-02-04T09:32:58Z",
+      "scrape_date": "2026-02-06T06:09:21.867097Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0c4x2w0x77ribj5lya3zgs18qkag31nf-zls-0.15.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ],
+  "compose": {
+    "composer": {
+      "version": 1,
+      "options": {},
+      "include": {
+        "environments": [
+          {
+            "remote": "zmitchell/zig"
+          },
+          {
+            "remote": "zmitchell/debuggers"
+          }
+        ]
+      }
+    },
+    "include": [
+      {
+        "manifest": {
+          "version": 1,
+          "install": {
+            "zig": {
+              "pkg-path": "zig",
+              "version": "0.15.2"
+            },
+            "zls": {
+              "pkg-path": "zls"
+            }
+          },
+          "hook": {
+            "on-activate": "  export PATH=\"$PWD/zig-out/bin:$PATH\"\n"
+          },
+          "profile": {
+            "fish": "  abbr wb \"zig build --watch -fincremental -Dno_install=true\"\n"
+          },
+          "options": {
+            "systems": [
+              "x86_64-linux",
+              "aarch64-linux",
+              "aarch64-darwin"
+            ]
+          }
+        },
+        "name": "zig",
+        "descriptor": {
+          "remote": "zmitchell/zig"
+        }
+      },
+      {
+        "manifest": {
+          "version": 1,
+          "install": {
+            "gdb": {
+              "pkg-path": "gdb",
+              "pkg-group": "debugger",
+              "systems": [
+                "x86_64-linux",
+                "aarch64-linux"
+              ]
+            },
+            "lldb": {
+              "pkg-path": "lldb",
+              "pkg-group": "debugger",
+              "systems": [
+                "aarch64-darwin",
+                "x86_64-linux",
+                "aarch64-linux"
+              ]
+            }
+          },
+          "options": {}
+        },
+        "name": "debuggers",
+        "descriptor": {
+          "remote": "zmitchell/debuggers"
+        }
+      }
+    ],
+    "warnings": []
+  }
+}
