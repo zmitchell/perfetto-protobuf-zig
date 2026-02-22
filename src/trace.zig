@@ -17,9 +17,9 @@ pub const TrackEventDefaults = track_event.TrackEventDefaults;
 pub const TrackEventDefaultsReader = track_event.TrackEventDefaultsReader;
 
 const debug_annotation = @import("gen/protos/perfetto/trace/track_event/debug_annotation.proto.zig");
-const DebugAnnotation = debug_annotation.DebugAnnotation;
-const DebugAnnotationReader = debug_annotation.DebugAnnotationReader;
+pub const DebugAnnotation = debug_annotation.DebugAnnotation;
+pub const DebugAnnotationReader = debug_annotation.DebugAnnotationReader;
 
 const track_descriptor = @import("gen/protos/perfetto/trace/track_event/track_descriptor.proto.zig");
-const TrackDescriptor = track_descriptor.TrackDescriptor;
-const TrackDescriptorReader = track_descriptor.TrackDescriptorReader;
+pub const TrackDescriptor = track_descriptor.TrackDescriptor;
+pub const TrackDescriptorReader = track_descriptor.TrackDescriptorReader;
