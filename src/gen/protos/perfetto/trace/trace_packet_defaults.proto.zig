@@ -3,9 +3,9 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const track_event = @import("src/gen/protos/perfetto/trace/track_event/track_event.proto.zig");
-const profile_packet = @import("src/gen/protos/perfetto/trace/profiling/profile_packet.proto.zig");
-const v8 = @import("src/gen/protos/perfetto/trace/chrome/v8.proto.zig");
+const track_event = @import("track_event/track_event.proto.zig");
+const profile_packet = @import("profiling/profile_packet.proto.zig");
+const v8 = @import("chrome/v8.proto.zig");
 // structs
 const TracePacketDefaultsWire = struct {
     const TIMESTAMP_CLOCK_ID_WIRE: gremlin.ProtoWireNumber = 58;

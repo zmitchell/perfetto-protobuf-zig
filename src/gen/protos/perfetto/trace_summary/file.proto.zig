@@ -4,7 +4,7 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const v2_metric = @import("v2_metric.proto.zig");
-const structured_query = @import("src/gen/protos/perfetto/perfetto_sql/structured_query.proto.zig");
+const structured_query = @import("../perfetto_sql/structured_query.proto.zig");
 // structs
 const TraceSummarySpecWire = struct {
     const METRIC_SPEC_WIRE: gremlin.ProtoWireNumber = 1;

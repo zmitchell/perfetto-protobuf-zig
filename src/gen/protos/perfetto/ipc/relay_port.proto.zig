@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const system_info = @import("src/gen/protos/perfetto/common/system_info.proto.zig");
+const system_info = @import("../common/system_info.proto.zig");
 // structs
 const InitRelayRequestWire = struct {
     const SYSTEM_INFO_WIRE: gremlin.ProtoWireNumber = 1;

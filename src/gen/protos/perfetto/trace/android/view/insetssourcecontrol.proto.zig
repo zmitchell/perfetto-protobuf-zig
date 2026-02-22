@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const point = @import("src/gen/protos/perfetto/trace/android/graphics/point.proto.zig");
+const point = @import("../graphics/point.proto.zig");
 const surfacecontrol = @import("surfacecontrol.proto.zig");
 // structs
 const InsetsSourceControlProtoWire = struct {

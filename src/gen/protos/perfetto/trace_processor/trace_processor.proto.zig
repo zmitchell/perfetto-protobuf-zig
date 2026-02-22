@@ -4,9 +4,9 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const metatrace_categories = @import("metatrace_categories.proto.zig");
-const descriptor = @import("src/gen/protos/perfetto/common/descriptor.proto.zig");
-const structured_query = @import("src/gen/protos/perfetto/perfetto_sql/structured_query.proto.zig");
-const file = @import("src/gen/protos/perfetto/trace_summary/file.proto.zig");
+const descriptor = @import("../common/descriptor.proto.zig");
+const structured_query = @import("../perfetto_sql/structured_query.proto.zig");
+const file = @import("../trace_summary/file.proto.zig");
 // enums
 pub const TraceProcessorApiVersion = enum(i32) {
     TRACE_PROCESSOR_CURRENT_API_VERSION = 14,

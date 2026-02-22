@@ -3,11 +3,11 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const trace_config = @import("src/gen/protos/perfetto/config/trace_config.proto.zig");
-const trace_stats = @import("src/gen/protos/perfetto/common/trace_stats.proto.zig");
-const observable_events = @import("src/gen/protos/perfetto/common/observable_events.proto.zig");
-const tracing_service_state = @import("src/gen/protos/perfetto/common/tracing_service_state.proto.zig");
-const tracing_service_capabilities = @import("src/gen/protos/perfetto/common/tracing_service_capabilities.proto.zig");
+const trace_config = @import("../config/trace_config.proto.zig");
+const trace_stats = @import("../common/trace_stats.proto.zig");
+const observable_events = @import("../common/observable_events.proto.zig");
+const tracing_service_state = @import("../common/tracing_service_state.proto.zig");
+const tracing_service_capabilities = @import("../common/tracing_service_capabilities.proto.zig");
 // structs
 const EnableTracingRequestWire = struct {
     const TRACE_CONFIG_WIRE: gremlin.ProtoWireNumber = 1;

@@ -3,8 +3,8 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const rect = @import("src/gen/protos/perfetto/trace/android/graphics/rect.proto.zig");
-const insets = @import("src/gen/protos/perfetto/trace/android/graphics/insets.proto.zig");
+const rect = @import("../graphics/rect.proto.zig");
+const insets = @import("../graphics/insets.proto.zig");
 // structs
 const InsetsSourceProtoWire = struct {
     const TYPE_WIRE: gremlin.ProtoWireNumber = 1;

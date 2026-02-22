@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const android_log_constants = @import("src/gen/protos/perfetto/common/android_log_constants.proto.zig");
+const android_log_constants = @import("../../common/android_log_constants.proto.zig");
 // structs
 const AndroidLogPacketWire = struct {
     const EVENTS_WIRE: gremlin.ProtoWireNumber = 1;

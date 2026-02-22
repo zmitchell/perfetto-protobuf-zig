@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const trace_config = @import("src/gen/protos/perfetto/config/trace_config.proto.zig");
+const trace_config = @import("../trace_config.proto.zig");
 // structs
 const TriggerRuleWire = struct {
     const NAME_WIRE: gremlin.ProtoWireNumber = 1;

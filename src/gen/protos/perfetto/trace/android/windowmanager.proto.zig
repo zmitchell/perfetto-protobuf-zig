@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const windowmanagerservice = @import("src/gen/protos/perfetto/trace/android/server/windowmanagerservice.proto.zig");
+const windowmanagerservice = @import("server/windowmanagerservice.proto.zig");
 // structs
 const WindowManagerTraceFileProtoWire = struct {
     const MAGIC_NUMBER_WIRE: gremlin.ProtoWireNumber = 1;

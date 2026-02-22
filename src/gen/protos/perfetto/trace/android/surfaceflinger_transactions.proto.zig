@@ -4,7 +4,7 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const surfaceflinger_common = @import("surfaceflinger_common.proto.zig");
-const rect = @import("src/gen/protos/perfetto/trace/android/graphics/rect.proto.zig");
+const rect = @import("graphics/rect.proto.zig");
 // structs
 const TransactionTraceFileWire = struct {
     const MAGIC_NUMBER_WIRE: gremlin.ProtoWireNumber = 1;

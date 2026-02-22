@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const trace_processor = @import("src/gen/protos/perfetto/trace_processor/trace_processor.proto.zig");
+const trace_processor = @import("../trace_processor/trace_processor.proto.zig");
 // structs
 const BigtraceQueryArgsWire = struct {
     const TRACES_WIRE: gremlin.ProtoWireNumber = 1;

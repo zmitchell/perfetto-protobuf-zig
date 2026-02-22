@@ -4,7 +4,7 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const locale = @import("locale.proto.zig");
-const window_configuration = @import("src/gen/protos/perfetto/trace/android/app/window_configuration.proto.zig");
+const window_configuration = @import("../app/window_configuration.proto.zig");
 // structs
 const ConfigurationProtoWire = struct {
     const FONT_SCALE_WIRE: gremlin.ProtoWireNumber = 1;

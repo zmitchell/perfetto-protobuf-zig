@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const console_config = @import("src/gen/protos/perfetto/config/interceptors/console_config.proto.zig");
+const console_config = @import("interceptors/console_config.proto.zig");
 // structs
 const InterceptorConfigWire = struct {
     const NAME_WIRE: gremlin.ProtoWireNumber = 1;

@@ -3,16 +3,16 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const track_event = @import("src/gen/protos/perfetto/trace/track_event/track_event.proto.zig");
-const debug_annotation = @import("src/gen/protos/perfetto/trace/track_event/debug_annotation.proto.zig");
-const source_location = @import("src/gen/protos/perfetto/trace/track_event/source_location.proto.zig");
-const log_message = @import("src/gen/protos/perfetto/trace/track_event/log_message.proto.zig");
-const chrome_histogram_sample = @import("src/gen/protos/perfetto/trace/track_event/chrome_histogram_sample.proto.zig");
-const profile_common = @import("src/gen/protos/perfetto/trace/profiling/profile_common.proto.zig");
-const gpu_render_stage_event = @import("src/gen/protos/perfetto/trace/gpu/gpu_render_stage_event.proto.zig");
-const network_trace = @import("src/gen/protos/perfetto/trace/android/network_trace.proto.zig");
-const v8 = @import("src/gen/protos/perfetto/trace/chrome/v8.proto.zig");
-const app_wakelock_data = @import("src/gen/protos/perfetto/trace/android/app_wakelock_data.proto.zig");
+const track_event = @import("../track_event/track_event.proto.zig");
+const debug_annotation = @import("../track_event/debug_annotation.proto.zig");
+const source_location = @import("../track_event/source_location.proto.zig");
+const log_message = @import("../track_event/log_message.proto.zig");
+const chrome_histogram_sample = @import("../track_event/chrome_histogram_sample.proto.zig");
+const profile_common = @import("../profiling/profile_common.proto.zig");
+const gpu_render_stage_event = @import("../gpu/gpu_render_stage_event.proto.zig");
+const network_trace = @import("../android/network_trace.proto.zig");
+const v8 = @import("../chrome/v8.proto.zig");
+const app_wakelock_data = @import("../android/app_wakelock_data.proto.zig");
 // structs
 const InternedDataWire = struct {
     const EVENT_CATEGORIES_WIRE: gremlin.ProtoWireNumber = 1;

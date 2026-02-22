@@ -3,15 +3,15 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const inputmethodmanager = @import("src/gen/protos/perfetto/trace/android/view/inputmethod/inputmethodmanager.proto.zig");
-const viewrootimpl = @import("src/gen/protos/perfetto/trace/android/view/viewrootimpl.proto.zig");
-const insetscontroller = @import("src/gen/protos/perfetto/trace/android/view/insetscontroller.proto.zig");
-const imeinsetssourceconsumer = @import("src/gen/protos/perfetto/trace/android/view/imeinsetssourceconsumer.proto.zig");
-const editorinfo = @import("src/gen/protos/perfetto/trace/android/view/inputmethod/editorinfo.proto.zig");
-const imefocuscontroller = @import("src/gen/protos/perfetto/trace/android/view/imefocuscontroller.proto.zig");
-const inputconnection = @import("src/gen/protos/perfetto/trace/android/view/inputmethod/inputconnection.proto.zig");
-const inputmethodservice = @import("src/gen/protos/perfetto/trace/android/inputmethodservice/inputmethodservice.proto.zig");
-const inputmethodmanagerservice = @import("src/gen/protos/perfetto/trace/android/server/inputmethod/inputmethodmanagerservice.proto.zig");
+const inputmethodmanager = @import("view/inputmethod/inputmethodmanager.proto.zig");
+const viewrootimpl = @import("view/viewrootimpl.proto.zig");
+const insetscontroller = @import("view/insetscontroller.proto.zig");
+const imeinsetssourceconsumer = @import("view/imeinsetssourceconsumer.proto.zig");
+const editorinfo = @import("view/inputmethod/editorinfo.proto.zig");
+const imefocuscontroller = @import("view/imefocuscontroller.proto.zig");
+const inputconnection = @import("view/inputmethod/inputconnection.proto.zig");
+const inputmethodservice = @import("inputmethodservice/inputmethodservice.proto.zig");
+const inputmethodmanagerservice = @import("server/inputmethod/inputmethodmanagerservice.proto.zig");
 // structs
 const InputMethodClientsTraceProtoWire = struct {
     const ELAPSED_REALTIME_NANOS_WIRE: gremlin.ProtoWireNumber = 1;

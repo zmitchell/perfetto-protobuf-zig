@@ -4,7 +4,7 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const insetssourcecontrol = @import("insetssourcecontrol.proto.zig");
-const rect = @import("src/gen/protos/perfetto/trace/android/graphics/rect.proto.zig");
+const rect = @import("../graphics/rect.proto.zig");
 // structs
 const InsetsSourceConsumerProtoWire = struct {
     const INTERNAL_INSETS_TYPE_WIRE: gremlin.ProtoWireNumber = 1;

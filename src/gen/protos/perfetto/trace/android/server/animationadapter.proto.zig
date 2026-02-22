@@ -3,8 +3,8 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const remote_animation_target = @import("src/gen/protos/perfetto/trace/android/view/remote_animation_target.proto.zig");
-const point = @import("src/gen/protos/perfetto/trace/android/graphics/point.proto.zig");
+const remote_animation_target = @import("../view/remote_animation_target.proto.zig");
+const point = @import("../graphics/point.proto.zig");
 // structs
 const AnimationAdapterProtoWire = struct {
     const LOCAL_WIRE: gremlin.ProtoWireNumber = 1;

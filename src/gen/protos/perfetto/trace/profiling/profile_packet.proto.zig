@@ -4,7 +4,7 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const profile_common = @import("profile_common.proto.zig");
-const perf_events = @import("src/gen/protos/perfetto/common/perf_events.proto.zig");
+const perf_events = @import("../../common/perf_events.proto.zig");
 // structs
 const ProfilePacketWire = struct {
     const STRINGS_WIRE: gremlin.ProtoWireNumber = 1;

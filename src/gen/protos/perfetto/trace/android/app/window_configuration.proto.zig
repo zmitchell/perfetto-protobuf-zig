@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const rect = @import("src/gen/protos/perfetto/trace/android/graphics/rect.proto.zig");
+const rect = @import("../graphics/rect.proto.zig");
 // structs
 const WindowConfigurationProtoWire = struct {
     const APP_BOUNDS_WIRE: gremlin.ProtoWireNumber = 1;

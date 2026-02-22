@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const gpu_counter_descriptor = @import("src/gen/protos/perfetto/common/gpu_counter_descriptor.proto.zig");
+const gpu_counter_descriptor = @import("../../common/gpu_counter_descriptor.proto.zig");
 // structs
 const GpuCounterEventWire = struct {
     const COUNTER_DESCRIPTOR_WIRE: gremlin.ProtoWireNumber = 1;

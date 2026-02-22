@@ -3,20 +3,20 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const statusbarmanager = @import("src/gen/protos/perfetto/trace/android/app/statusbarmanager.proto.zig");
-const surface = @import("src/gen/protos/perfetto/trace/android/view/surface.proto.zig");
-const activityinfo = @import("src/gen/protos/perfetto/trace/android/content/activityinfo.proto.zig");
-const enums = @import("src/gen/protos/perfetto/trace/android/view/enums.proto.zig");
-const displayinfo = @import("src/gen/protos/perfetto/trace/android/view/displayinfo.proto.zig");
-const rect = @import("src/gen/protos/perfetto/trace/android/graphics/rect.proto.zig");
+const statusbarmanager = @import("../app/statusbarmanager.proto.zig");
+const surface = @import("../view/surface.proto.zig");
+const activityinfo = @import("../content/activityinfo.proto.zig");
+const enums = @import("../view/enums.proto.zig");
+const displayinfo = @import("../view/displayinfo.proto.zig");
+const rect = @import("../graphics/rect.proto.zig");
 const windowcontainerthumbnail = @import("windowcontainerthumbnail.proto.zig");
-const windowlayoutparams = @import("src/gen/protos/perfetto/trace/android/view/windowlayoutparams.proto.zig");
-const displaycutout = @import("src/gen/protos/perfetto/trace/android/view/displaycutout.proto.zig");
-const insetssource = @import("src/gen/protos/perfetto/trace/android/view/insetssource.proto.zig");
+const windowlayoutparams = @import("../view/windowlayoutparams.proto.zig");
+const displaycutout = @import("../view/displaycutout.proto.zig");
+const insetssource = @import("../view/insetssource.proto.zig");
 const surfaceanimator = @import("surfaceanimator.proto.zig");
-const surfacecontrol = @import("src/gen/protos/perfetto/trace/android/view/surfacecontrol.proto.zig");
-const configuration = @import("src/gen/protos/perfetto/trace/android/content/configuration.proto.zig");
-const insetssourcecontrol = @import("src/gen/protos/perfetto/trace/android/view/insetssourcecontrol.proto.zig");
+const surfacecontrol = @import("../view/surfacecontrol.proto.zig");
+const configuration = @import("../content/configuration.proto.zig");
+const insetssourcecontrol = @import("../view/insetssourcecontrol.proto.zig");
 // structs
 const WindowManagerServiceDumpProtoWire = struct {
     const POLICY_WIRE: gremlin.ProtoWireNumber = 1;

@@ -4,9 +4,9 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const surfacecontrol = @import("surfacecontrol.proto.zig");
-const rect = @import("src/gen/protos/perfetto/trace/android/graphics/rect.proto.zig");
-const point = @import("src/gen/protos/perfetto/trace/android/graphics/point.proto.zig");
-const window_configuration = @import("src/gen/protos/perfetto/trace/android/app/window_configuration.proto.zig");
+const rect = @import("../graphics/rect.proto.zig");
+const point = @import("../graphics/point.proto.zig");
+const window_configuration = @import("../app/window_configuration.proto.zig");
 // structs
 const RemoteAnimationTargetProtoWire = struct {
     const TASK_ID_WIRE: gremlin.ProtoWireNumber = 1;

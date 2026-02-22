@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const debug_annotation = @import("src/gen/protos/perfetto/trace/track_event/debug_annotation.proto.zig");
+const debug_annotation = @import("track_event/debug_annotation.proto.zig");
 // structs
 const TestEventWire = struct {
     const STR_WIRE: gremlin.ProtoWireNumber = 1;

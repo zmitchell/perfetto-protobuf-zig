@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const builtin_clock = @import("src/gen/protos/perfetto/common/builtin_clock.proto.zig");
+const builtin_clock = @import("../common/builtin_clock.proto.zig");
 // structs
 const ClockSnapshotWire = struct {
     const CLOCKS_WIRE: gremlin.ProtoWireNumber = 1;

@@ -4,8 +4,8 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const data_source_config = @import("data_source_config.proto.zig");
-const builtin_clock = @import("src/gen/protos/perfetto/common/builtin_clock.proto.zig");
-const priority_boost_config = @import("src/gen/protos/perfetto/config/priority_boost/priority_boost_config.proto.zig");
+const builtin_clock = @import("../common/builtin_clock.proto.zig");
+const priority_boost_config = @import("priority_boost/priority_boost_config.proto.zig");
 // structs
 const TraceConfigWire = struct {
     const BUFFERS_WIRE: gremlin.ProtoWireNumber = 1;

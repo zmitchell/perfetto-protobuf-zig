@@ -4,15 +4,15 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const chrome_trace_event = @import("chrome_trace_event.proto.zig");
-const clock_snapshot = @import("src/gen/protos/perfetto/trace/clock_snapshot.proto.zig");
-const track_event = @import("src/gen/protos/perfetto/trace/track_event/track_event.proto.zig");
-const process_descriptor = @import("src/gen/protos/perfetto/trace/track_event/process_descriptor.proto.zig");
-const thread_descriptor = @import("src/gen/protos/perfetto/trace/track_event/thread_descriptor.proto.zig");
-const profile_packet = @import("src/gen/protos/perfetto/trace/profiling/profile_packet.proto.zig");
+const clock_snapshot = @import("../clock_snapshot.proto.zig");
+const track_event = @import("../track_event/track_event.proto.zig");
+const process_descriptor = @import("../track_event/process_descriptor.proto.zig");
+const thread_descriptor = @import("../track_event/thread_descriptor.proto.zig");
+const profile_packet = @import("../profiling/profile_packet.proto.zig");
 const chrome_trigger = @import("chrome_trigger.proto.zig");
-const trace_config = @import("src/gen/protos/perfetto/config/trace_config.proto.zig");
-const trace_stats = @import("src/gen/protos/perfetto/common/trace_stats.proto.zig");
-const interned_data = @import("src/gen/protos/perfetto/trace/interned_data/interned_data.proto.zig");
+const trace_config = @import("../../config/trace_config.proto.zig");
+const trace_stats = @import("../../common/trace_stats.proto.zig");
+const interned_data = @import("../interned_data/interned_data.proto.zig");
 // structs
 const ChromeTracePacketWire = struct {
     const CHROME_EVENTS_WIRE: gremlin.ProtoWireNumber = 5;

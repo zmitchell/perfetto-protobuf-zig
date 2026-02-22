@@ -3,8 +3,8 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const data_source_descriptor = @import("src/gen/protos/perfetto/common/data_source_descriptor.proto.zig");
-const data_source_config = @import("src/gen/protos/perfetto/config/data_source_config.proto.zig");
+const data_source_descriptor = @import("../common/data_source_descriptor.proto.zig");
+const data_source_config = @import("../config/data_source_config.proto.zig");
 // structs
 const InitializeConnectionRequestWire = struct {
     const SHARED_MEMORY_PAGE_SIZE_HINT_BYTES_WIRE: gremlin.ProtoWireNumber = 1;

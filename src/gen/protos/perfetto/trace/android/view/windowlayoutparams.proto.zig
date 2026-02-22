@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const pixelformat = @import("src/gen/protos/perfetto/trace/android/graphics/pixelformat.proto.zig");
+const pixelformat = @import("../graphics/pixelformat.proto.zig");
 const display = @import("display.proto.zig");
 // structs
 const WindowLayoutParamsProtoWire = struct {

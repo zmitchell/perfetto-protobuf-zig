@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const android_energy_consumer_descriptor = @import("src/gen/protos/perfetto/common/android_energy_consumer_descriptor.proto.zig");
+const android_energy_consumer_descriptor = @import("../../common/android_energy_consumer_descriptor.proto.zig");
 // structs
 const AndroidEnergyEstimationBreakdownWire = struct {
     const ENERGY_CONSUMER_DESCRIPTOR_WIRE: gremlin.ProtoWireNumber = 1;

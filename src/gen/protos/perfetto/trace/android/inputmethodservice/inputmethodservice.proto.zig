@@ -4,8 +4,8 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const softinputwindow = @import("softinputwindow.proto.zig");
-const editorinfo = @import("src/gen/protos/perfetto/trace/android/view/inputmethod/editorinfo.proto.zig");
-const inputconnection = @import("src/gen/protos/perfetto/trace/android/view/inputmethod/inputconnection.proto.zig");
+const editorinfo = @import("../view/inputmethod/editorinfo.proto.zig");
+const inputconnection = @import("../view/inputmethod/inputconnection.proto.zig");
 // structs
 const InputMethodServiceProtoWire = struct {
     const SOFT_INPUT_WINDOW_WIRE: gremlin.ProtoWireNumber = 1;

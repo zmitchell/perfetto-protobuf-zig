@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const surfacecontrol = @import("src/gen/protos/perfetto/trace/android/view/surfacecontrol.proto.zig");
+const surfacecontrol = @import("../view/surfacecontrol.proto.zig");
 const animationadapter = @import("animationadapter.proto.zig");
 // structs
 const SurfaceAnimatorProtoWire = struct {

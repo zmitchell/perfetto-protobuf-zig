@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const descriptor = @import("src/gen/protos/perfetto/common/descriptor.proto.zig");
+const descriptor = @import("../common/descriptor.proto.zig");
 // structs
 const ExtensionDescriptorWire = struct {
     const EXTENSION_SET_WIRE: gremlin.ProtoWireNumber = 1;

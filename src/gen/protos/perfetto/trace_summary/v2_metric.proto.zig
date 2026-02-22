@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const structured_query = @import("src/gen/protos/perfetto/perfetto_sql/structured_query.proto.zig");
+const structured_query = @import("../perfetto_sql/structured_query.proto.zig");
 // structs
 const TraceMetricV2SpecWire = struct {
     const ID_WIRE: gremlin.ProtoWireNumber = 1;

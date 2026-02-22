@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const galaxies = @import("src/gen/src/protozero/test/example_proto/library_internals/galaxies.proto.zig");
+const galaxies = @import("library_internals/galaxies.proto.zig");
 // structs
 const TransgalacticMessageWire = struct {
     const ORIGIN_GALAXY_WIRE: gremlin.ProtoWireNumber = 1;

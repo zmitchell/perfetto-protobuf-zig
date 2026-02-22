@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const sys_stats_counters = @import("src/gen/protos/perfetto/common/sys_stats_counters.proto.zig");
+const sys_stats_counters = @import("../../common/sys_stats_counters.proto.zig");
 // structs
 const SysStatsWire = struct {
     const MEMINFO_WIRE: gremlin.ProtoWireNumber = 1;

@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const editorinfo = @import("src/gen/protos/perfetto/trace/android/view/inputmethod/editorinfo.proto.zig");
+const editorinfo = @import("../../view/inputmethod/editorinfo.proto.zig");
 // structs
 const InputMethodManagerServiceProtoWire = struct {
     const CUR_METHOD_ID_WIRE: gremlin.ProtoWireNumber = 1;

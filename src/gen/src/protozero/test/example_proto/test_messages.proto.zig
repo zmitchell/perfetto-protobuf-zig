@@ -4,8 +4,8 @@
 const std = @import("std");
 const gremlin = @import("gremlin");
 const library = @import("library.proto.zig");
-const test_messages = @import("src/gen/src/protozero/test/example_proto/subpackage/test_messages.proto.zig");
-const test_messages = @import("src/gen/src/protozero/test/example_proto/other_package/test_messages.proto.zig");
+const test_messages = @import("subpackage/test_messages.proto.zig");
+const test_messages = @import("other_package/test_messages.proto.zig");
 // enums
 pub const SmallEnum = enum(i32) {
     TO_BE = 1,

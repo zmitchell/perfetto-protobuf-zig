@@ -3,7 +3,7 @@
 // =============================================================================
 const std = @import("std");
 const gremlin = @import("gremlin");
-const protolog_common = @import("src/gen/protos/perfetto/common/protolog_common.proto.zig");
+const protolog_common = @import("../../common/protolog_common.proto.zig");
 // structs
 const ProtoLogConfigWire = struct {
     const GROUP_OVERRIDES_WIRE: gremlin.ProtoWireNumber = 1;
