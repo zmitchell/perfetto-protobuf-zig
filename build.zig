@@ -29,6 +29,10 @@ pub fn build(b: *std.Build) void {
     });
     mod.addImport("gremlin", gremlin_mod);
 
+    const exe_mod = b.createModule(.{ .root_source_file = b.path("src/main.zig"), .optimize = optimize, .target = target });
+    exe_mod.addImport("gremlin", gremlin_mod);
+    const exe = b.addExecutable(.{ .name = "dummy", .root_module = exe_mod });
+    b.installArtifact(exe);
     build_helpers.addCheckStep(b, "perfetto-protobuf-zig", "Check without installing output files", mod);
     build_helpers.addTestStep(b, target, optimize, &.{mod}, &.{});
 }
